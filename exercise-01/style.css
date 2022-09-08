@@ -1,0 +1,38 @@
+.header {
+  background-color: #3a3633;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.main {
+  padding: 32vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer {
+  background-color: #3a3633;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 16px 300px;
+}
+.copyright {
+  display: inline-block;
+  padding-top: 8px;
+}
+.language {
+  float: right;
+  padding-top: 8px;
+}
+.call-us {
+  border-bottom: 1px solid white;
+  padding-bottom: 8px;
+}
+.about-us {
+  padding-top: 8px;
+}
