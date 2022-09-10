@@ -1,3 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
 .header {
   background-color: #3a3633;
   color: white;
