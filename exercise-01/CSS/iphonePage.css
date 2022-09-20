@@ -1,0 +1,220 @@
+* {
+  font-size: 17px;
+  letter-spacing: -0.022em;
+  line-height: 1.4;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  color: #1d1d1f;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  line-height: 50px;
+  font-size: 45px;
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: -0.003em;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 68px;
+}
+
+/* define the grid layout */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+  grid-row-gap: 40px;
+  grid-column-gap: 34px;
+  width: 940px;
+}
+
+.iphone14pro,
+.iphone14,
+.iphone13,
+.iphoneSE {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #d2d2d7;
+  padding-bottom: 35px;
+}
+
+/* set size of phone pic */
+.iphone14proimg {
+  width: 190px;
+  height: 257px;
+  margin-bottom: 22px;
+}
+
+.iphone14img {
+  width: 180px;
+  height: 257px;
+  margin-bottom: 22px;
+}
+
+.iphone13img {
+  width: 161px;
+  height: 257px;
+  margin-bottom: 22px;
+}
+
+.iphoneSEimg {
+  width: 161px;
+  height: 257px;
+  margin-bottom: 22px;
+}
+
+.switch {
+  height: 14px;
+}
+
+.NEW {
+  color: #bf4800;
+  font-size: 10px;
+  letter-spacing: 0.1px;
+  padding-top: 14px;
+  padding-bottom: 8px;
+}
+
+.model {
+  height: 20px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.1px;
+  color: #06c;
+}
+
+/* design round border and color */
+.Buy,
+.Shop {
+  font-size: 12px;
+  color: white;
+  background-color: #06c;
+  padding: 4px 11px;
+  border-radius: 15px;
+  margin-top: 16px;
+}
+
+/* set nowrp for the purpose single line */
+.descriptionSE {
+  margin-top: 7px;
+  min-height: 50px;
+  letter-spacing: 0.1px;
+  white-space: nowrap;
+}
+
+.description {
+  margin-top: 7px;
+  min-height: 50px;
+  letter-spacing: 0.1px;
+}
+
+.price {
+  font-size: 14px;
+  letter-spacing: 0.1px;
+  margin-top: 11px;
+}
+
+.learn {
+  padding-top: 11px;
+}
+
+/* media from 700-1000px */
+@media only screen and (max-width: 1000px) {
+  .title {
+    font-size: 37px;
+    letter-spacing: 0px;
+  }
+
+  .container {
+    grid-column-gap: 75px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    width: 500px;
+  }
+
+  .iphone14proimg {
+    width: 151px;
+    height: 204px;
+  }
+
+  .iphone14img {
+    width: 143px;
+    height: 204px;
+  }
+
+  .iphone13img {
+    width: 128px;
+    height: 204px;
+  }
+
+  .iphoneSEimg {
+    width: 119px;
+    height: 204px;
+  }
+
+  .switch {
+    height: 18px;
+  }
+}
+/* media less than 700px */
+@media only screen and (max-width: 700px) {
+  .title {
+    font-size: 32px;
+    padding-top: 25px;
+    padding-bottom: 40px;
+  }
+
+  .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    width: 500px;
+  }
+
+  .iphone14proimg {
+    width: 123px;
+    height: 165px;
+  }
+
+  .iphone14img {
+    width: 115px;
+    height: 165px;
+  }
+
+  .iphone13img {
+    width: 105px;
+    height: 165px;
+  }
+
+  .iphoneSEimg {
+    width: 99px;
+    height: 165px;
+  }
+
+  .switch {
+    height: 18px;
+  }
+
+  .descriptionSE {
+    max-width: 160px;
+    word-wrap: break-all;
+  }
+}

@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.header {
+  padding: 20px 0px;
+
+  font-size: 25px;
+}
+
+/* create flexbox for whole content, located middle */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* set td border to collapse */
+table {
+  border-collapse: collapse;
+  width: 940px;
+}
+
+/* set padding and shadow style for table  */
+.table {
+  padding: 12px 20px;
+  box-shadow: -2px 0px 10px 1px #dddddd;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+th {
+  text-align: left;
+  padding: 8px;
+  font-size: 25px;
+}
+
+td {
+  text-align: left;
+  padding: 8px;
+  font-size: 21px;
+}
+
+@media only screen and (max-width: 1050px) {
+  .header {
+    padding: 15px 0px;
+    font-size: 15px;
+  }
+  table {
+    width: 640px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .header {
+    padding: 10px 0px;
+    font-size: 10px;
+  }
+}
